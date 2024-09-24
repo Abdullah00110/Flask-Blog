@@ -5,17 +5,8 @@ body {
   margin-top: 5rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: #444444;
-}
-
-.bg-steel {
-  background-color: #5f788a;
 }
 
 .site-header .navbar-nav .nav-link {
@@ -36,6 +27,47 @@ h6 {
   border: 1px solid #dddddd;
   border-radius: 3px;
   margin-bottom: 20px;
+}
+
+/* Media Styles for Account Section */
+.media {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Space below */
+}
+
+.account-img {
+  height: 125px; /* Adjusted size */
+  width: 125px; /* Adjusted size */
+  border-radius: 50%; /* Make it circular */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.account-heading {
+  font-size: 2rem; /* Adjust font size for heading */
+  margin: 0; /* Remove default margin */
+}
+
+.text-secondary {
+  margin: 0; /* Remove default margin for email */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .content-section {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .media {
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
+  }
+
+  .account-img {
+    margin-bottom: 10px; /* Space below image */
+  }
 }
 
 .article-title {
@@ -60,7 +92,7 @@ a.article-title:hover {
 .article-metadata {
   padding-bottom: 1px;
   margin-bottom: 4px;
-  border-bottom: 1px solid #e3e3e3
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .article-metadata a:hover {
@@ -72,22 +104,6 @@ a.article-title:hover {
   width: 25px;
   height: 25px;
   vertical-align: middle;
-}
-
-.account-img {
-  height: 125px;
-  width: 125px;
-  margin-left: -15px;
-  margin-bottom: 16px;
-  object-fit: cover;
-}
-
-.account-heading {
-  font-size: 2.5rem;
-}
-
-.media-body{
-  margin: 17px;
 }
 
 .modal-backdrop {

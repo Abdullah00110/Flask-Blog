@@ -1,9 +1,12 @@
 import os
 # from dotenv import load_dotenv
 
+# load_dotenv()
+
 class Config:
-        SECRET_KEY = os.environ.get('SECRET_KEY')
-        SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
+
+        SECRET_KEY= '6a2dd7adefc8975c1afffea5240a1fb7'
+        SQLALCHEMY_DATABASE_URI='sqlite:///Blog.db'
         MAIL_SERVER = 'smtp.googlemail.com'
         MAIL_PORT = 587
         MAIL_USE_TLS = True

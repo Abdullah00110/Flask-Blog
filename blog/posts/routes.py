@@ -9,15 +9,25 @@ posts = Blueprint('posts', __name__)
 @posts.route("/post/new", methods=['GET', 'POST'])
 @login_required
 def new_post():
-    form = PostForm()
+    form=PostForm()
     if form.validate_on_submit():
-        post = Post(title=form.title.data, content=form.content.data, author=current_user)
+        post=Post(title=form.title.data, content=form.content.data, author=current_user)
         db.session.add(post)
         db.session.commit()
-        flash('Your post has been created!', 'success')
-        return redirect(url_for('posts.home'))
-    return render_template('create_post.html', title='New Post',
-                           form=form, legend='New Post')
+        flash('Your Post has been created','success')
+        return redirect(url_for('main.home'))
+    return render_template('create_post.html', title='New Poast',form=form,
+                           legend='New Post')
+# def new_post():
+#     form = PostForm()
+#     if form.validate_on_submit():
+#         post = Post(title=form.title.data, content=form.content.data, author=current_user)
+#         db.session.add(post)
+#         db.session.commit()
+#         flash('Your post has been created!', 'success')
+#         return redirect(url_for('posts.home'))
+#     return render_template('create_post.html', title='New Post',
+#                            form=form, legend='New Post')
 
 
 @posts.route("/post/<int:post_id>", methods=['GET'])
@@ -56,4 +66,4 @@ def delete_post(post_id):
     db.session.delete(post)
     db.session.commit()
     flash('Your post has been deleted!', 'success')
-    return redirect(url_for('home'))
+    return redirect(url_for('main.home'))
