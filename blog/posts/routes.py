@@ -16,7 +16,7 @@ def new_post():
         db.session.commit()
         flash('Your Post has been created','success')
         return redirect(url_for('main.home'))
-    return render_template('create_post.html', title='New Poast',form=form,
+    return render_template('create_post.html', title='New Post',form=form,
                            legend='New Post')
 # def new_post():
 #     form = PostForm()

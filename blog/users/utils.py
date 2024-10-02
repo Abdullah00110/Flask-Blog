@@ -17,14 +17,22 @@ def save_picture(form_picture):
     i.save(picture_path)
     return picture_fn
 
+
+
 def send_reset_email(user):
     token = user.get_reset_token()
     msg = Message('Password Reset Request',
-                  sender='abdullahsunasara6@gmail.com',
+                  sender=mail.username,  # Use the mail object to get the sender's email
                   recipients=[user.email])
     msg.body = f'''To reset your password, visit the following link:
-    {url_for('reset_token', token=token, _external=True)}
+    {url_for('users.reset_token', token=token, _external=True)}
 
     If you did not make this request then simply ignore this email and no changes will be made.
     '''
-    mail.send(msg)
+    try:
+        mail.send(msg)
+        print("Email sent successfully!")
+    except Exception as e:
+        print(f"Failed to send email: {e}")
+
+

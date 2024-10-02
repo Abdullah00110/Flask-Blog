@@ -1,3 +1,8 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
 body {
   font-family: 'Space Grotesk', sans-serif;
   background: #fafafa;
@@ -108,4 +113,430 @@ a.article-title:hover {
 
 .modal-backdrop {
   z-index: 0 !important;
+}
+
+.team .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  }
+  
+  .team .member .teampic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+  }
+  
+  /* .team .member .teampic img {
+  transition: ease-in-out 0.3s;
+  } */
+  
+  
+  .team .member .member-info {
+  padding-left: 30px;
+  }
+  
+  .team .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: tomato;
+  }
+  
+  .team .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+  }
+  
+  .team .member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: black;
+  bottom: 0;
+  left: 0;
+  }
+  
+  .team .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  }
+  
+  .team .member .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  }
+  
+  .team .member .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+  }
+  
+  .team .member .social a i {
+  color: tomato;
+  font-size: 16px;
+  margin: 0 2px;
+  }
+  
+  .team .member .social a:hover {
+  background: tomato;
+  }
+  
+  .team .member .social a:hover i {
+  color: #fff;
+  }
+  
+  .team .member .social a+a {
+  margin-left: 8px;
+  }
+  
+  section {
+  padding: 60px 0;
+  overflow: hidden;
+  }
+  
+  
+  
+  .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: tomato;
+  }
+  
+  .underline{
+      width: 150px;
+      height: 1px;
+      background-color: black;
+      margin: auto;
+      margin-top: -30px;
+  }
+  /* .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+  }
+  
+  .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+  } */
+  
+  .section-title p {
+  margin-top: 20px;
+  }
+  
+  
+
+/* Responsive about page */
+
+/* @media screen and (min-width: 700px) {
+  .row{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card{
+    margin: 2rem;
+    transition: opacity .5s;
+
+  }
+
+  @keyframes fadeIn {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+    .card:nth-child(1){
+      animation: fadeIn .5s .5s backwards;
+    }
+
+    .card:nth-child(2){
+      animation: fadeIn .5s 1s backwards;
+    }
+
+    .card:nth-child(3){
+      animation: fadeIn .5s 1.5s backwards;
+    }
+
+    .card:nth-child(4){
+      animation: fadeIn .5s 2s backwards;
+    }
+
+    .card:hover{
+      transform: scale(1.05);
+    }
+  } */ 
+
+
+
+
+
+
+/* .about-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.about-section h1 {
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555555;
+}
+
+.team-section {
+  padding: 4rem 0;
+}
+
+.team-section h2 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.team-section .card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;      
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  overflow: hidden;       
+  height: auto;            
+  width: 100%;            
+  max-width: 350px; 
+  margin: 0 auto; 
+  display: flex;          
+  flex-direction: column; 
+  background-color: #ffffff; 
+  padding: 20px;
+} */
+
+/* Hover effects for a stylish lift */
+/* .team-section .card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
+
+/* Title styling */
+/* .team-section .card-title {
+  font-size: 1.4rem; 
+  font-weight: 600; 
+  color: #333333;
+  margin-bottom: 0.5rem; 
+} */
+
+/* Text styling */
+/* .team-section .card-text {
+  font-size: 0.9rem; 
+  color: #666666;
+  margin-bottom: 1rem; 
+  line-height: 1.5; 
+} */
+
+/* Image styling */
+/* .team-section .card img {
+  height: 150px; 
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 10px; 
+  margin-bottom: 1rem; 
+  border: none; 
+}
+
+.card p {
+  margin: 0; 
+  text-align: center; 
+  padding: 5px 0; 
+}
+
+/* Card body */
+/* .team-section .card-body {
+  flex-grow: 1;
+  padding: 10px; 
+  overflow: auto; 
+} */
+/* Optional: Add a button for interaction */
+/* .team-section .card .btn {
+  background-color: #428bca; 
+  color: white; 
+  margin-top: auto; 
+} */
+
+/* .team-section .card .btn:hover {
+  background-color: #357ab8; 
+} */
+
+
+/* .mission-section {
+  padding: 4rem 0;
+  background-color: #fafafa;
+} */ 
+
+/* .mission-section h2 {
+  margin-bottom: 1.5rem;
+  color: #333333;
+  font-weight: 600;
+} */
+
+/* .mission-section p {
+  font-size: 1rem;
+  color: #555555;
+} */
+
+/* .contact-section {
+  padding: 4rem 0;
+} */
+
+/* .contact-section h2 {
+  font-weight: 600;
+  color: #333333;
+} */
+
+/* .contact-section p {
+  font-size: 1.2rem;
+  color: #555555;
+} */
+
+/* .contact-section .btn {
+  background-color: #428bca;
+  color: white;
+} */
+
+/* .contact-section .btn:hover {
+  background-color: #357ab8;
+} */
+
+/* Button Hover Effects */
+/* a.btn-info:hover {
+  background-color: #1d7fbf;
+  border-color: #1d7fbf;
+} */
+
+/* Responsive Styles for About Page */
+/* @media (max-width: 768px) { */
+  /* About Section */
+  /* .about-section, .mission-section, .team-section, .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .team-section .card {
+    margin-bottom: 2rem; 
+  }
+
+  .team-section .card img {
+    height: 483px; 
+  }
+
+  .mission-section h2, .team-section h2, .contact-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .team-section .card-title, .team-section .card-text {
+    text-align: center; 
+  }
+
+
+  .about-section h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+    text-align: center;
+  }
+} */
+
+/* For smaller devices */
+/* @media (max-width: 576px) {
+  .team-section .card img {
+    height: 150px; 
+  }
+
+  .team-section .card-title {
+    font-size: 1.3rem; 
+  }
+
+  .about-section p {
+    font-size: 0.9rem;
+  }
+} */
+
+/* Footer */
+
+footer {
+  background-color: #f8f9fa; 
+  padding: 20px 0;          
+  text-align: center;   
+  position: relative;        
+  bottom: 0;             
+  width: 100%;       
+}
+
+footer .container {
+  max-width: 1140px;        
+  margin: 0 auto;           
+}
+
+footer p {
+  margin: 5px 0;            
+}
+
+footer a {
+  color: #007bff;          
+  text-decoration: none;     
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+  footer p {
+      font-size: 14px;       
+  }
 }

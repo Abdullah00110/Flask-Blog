@@ -1,26 +1,12 @@
 from dotenv import load_dotenv
-# import base64
 from flask import Flask 
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_mail import Mail
-from email.mime.text import MIMEText
-from google.oauth2.credentials import Credentials
-from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.discovery import build
 from blog.config import Config
 
-
-
-
 load_dotenv()
-
-# Define the OAuth 2.0 scopes
-SCOPES = ['https://www.googleapis.com/auth/gmail.send']
-CLIENT_SECRETS_FILE = "client_secret.json"
-
-
 
 db = SQLAlchemy()
 bcrypt = Bcrypt()
