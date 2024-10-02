@@ -1,7 +1,7 @@
 import os
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
-# load_dotenv()
+load_dotenv()
 
 class Config:
     SECRET_KEY = '6a2dd7adefc8975c1afffea5240a1fb7'
