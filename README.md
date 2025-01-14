@@ -24,7 +24,7 @@ The Flask Blog Application is a robust and scalable web application designed for
   - Tag posts with relevant keywords for better searchability.
 
 - **Responsive Design**:
-  - Mobile-friendly layout using Bootstrap or another CSS framework.
+  - A mobile-friendly layout using Bootstrap or another CSS framework.
   - Ensures a great user experience on all devices.
 
 - **Search Functionality**:
