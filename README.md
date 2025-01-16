@@ -12,6 +12,7 @@ The Flask Blog Application is a robust and scalable web application designed for
 - **Post Management**:
   - Create, read, update, and delete blog posts (Crud operation).
   - Rich text editor for formatting posts.
+  - you can comment also
   - Support for adding images and other media to posts.
 
 - **Comment System**:
