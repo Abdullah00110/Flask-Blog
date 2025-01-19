@@ -45,7 +45,7 @@ The Flask Blog Application is a robust and scalable web application designed for
   - Sitemap generation and integration with Google Analytics.
 
 - **Extensibility**:
-  - Modular architecture allowing easy addition of new features.
+  - Modular architecture allows easy addition of new features.
   - RESTful API endpoints for integration with other services.
 
 ## Technology Stack
@@ -100,7 +100,7 @@ The Flask Blog Application is a robust and scalable web application designed for
 
 ## Contribution
 
-We welcome contributions from the community! Feel free to fork the repository, create a new branch, and submit a pull request. Please ensure your code adheres to the project's coding standards and includes appropriate tests.
+We welcome contributions from the community! Feel free to fork the repository, create a new branch, and submit a pull request. Please ensure your code follows the project's coding standards and includes the appropriate tests.
 
 ## License
 
